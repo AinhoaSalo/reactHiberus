@@ -1,19 +1,20 @@
 .todoHome {
-    margin: 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    background-color: white;
 }
 
 .seccionesHome {
-    width: 95%;
+    text-decoration: none;
+    width: 90%;
     display: grid;
-    flex-direction: column;
     place-items: center;
     border: solid #94B0B2;
     margin: 10px;
     padding: 10px 0;
+    font-size: 17px;
+    border-radius: 5px;
 }
 
 .tituloSeccionesHome{
@@ -23,5 +24,25 @@
 }
 
 .imgSeccionesHome {
-    width: 80%;
+    width: 95%;
+    border-radius: 5px;
+}
+
+@media (min-width: 1000px) {
+    .seccionesHome {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .tituloSeccionesHome {
+        width: 50%;
+        text-align: center;
+    }
+
+    .imgSeccionesHome {
+        width: 56%;
+        margin: 0 20px;
+    }
+
 }
