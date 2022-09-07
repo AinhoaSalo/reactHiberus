@@ -22,8 +22,8 @@ function App() {
         <main>
           <Routes>
             <Route exact path={routes.HOME} element={<Home />} />
-            <Route exact path={routes.PERSONAJES} element={<Episodios />} />
-            <Route exact path={routes.EPISODIOS} element={<Personajes />} />
+            <Route exact path={routes.PERSONAJES} element={<Personajes />} />
+            <Route exact path={routes.EPISODIOS} element={<Episodios />} />
             <Route exact path={routes.CONTACTO} element={<Formulario />} />
           </Routes>
         </main>
