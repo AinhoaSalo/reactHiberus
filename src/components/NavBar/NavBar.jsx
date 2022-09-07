@@ -6,7 +6,7 @@ export function NavBar() {
     return (
         <>
             <h1>Soy NavBar</h1>
-            <Link to='/episodios'>Episodios</Link>
+            {/* <Link to='/episodios'>Episodios</Link> */}
         </>
     )
 }
