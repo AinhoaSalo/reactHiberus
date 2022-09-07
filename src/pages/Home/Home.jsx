@@ -12,7 +12,7 @@ export const Home = () => {
           <h2 className='tituloSeccionesHome'>Personajes</h2>
           <img className='imgSeccionesHome' src="https://fondosmil.com/fondo/27345.jpg" alt="Personajes" />
         </Link>
-        <Link className='seccionesHome' to={routes.PERSONAJES}>
+        <Link className='seccionesHome' to={routes.EPISODIOS}>
           <h2 className='tituloSeccionesHome'>Episodios</h2>
           <img className='imgSeccionesHome' src="https://p4.wallpaperbetter.com/wallpaper/588/5/300/rick-and-morty-toilets-hd-wallpaper-preview.jpg" alt="Episodios" />
         </Link>
@@ -24,5 +24,3 @@ export const Home = () => {
     </>
   )
 }
-
-

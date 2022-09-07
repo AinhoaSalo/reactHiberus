@@ -6,7 +6,7 @@ import "./Personajes.css"
 
 export const Personajes = () => {
   return (
-    <div class='container'>
+    <div className='container'>
       <Card name='Morty' />
       <Card name='Morty2' />
     </div>
