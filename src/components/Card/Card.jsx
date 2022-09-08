@@ -19,7 +19,11 @@ export const Card = () => {
                 <div className="card__side card__side--front">
                     <div className="card__theme">
                         <div className="card__theme-box">
+<<<<<<< HEAD
                             <p className="card__title">Morty</p>
+=======
+                            <p className="card__title">Morty (sustituir variable name)</p>
+>>>>>>> c11c9518fbec76df3d7fad3964bd1339102bfd92
                         </div>
                     </div>
                 </div>
