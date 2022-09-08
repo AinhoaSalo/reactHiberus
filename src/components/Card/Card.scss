@@ -22,28 +22,28 @@ $color-white: #fff;
  justify-content: center;
 }
 
-@mixin respond($breakpoint) {
- @if $breakpoint == phone {
-  @media (max-width: 37.5em) {
-   @content;
-  } // < 600px
- }
- @if $breakpoint == tab-port {
-  @media (max-width: 56.25em) {
-   @content;
-  } // < 900px
- }
- @if $breakpoint == tab-land {
-  @media (max-width: 75em) {
-   @content;
-  } // < 1200px
- }
- @if $breakpoint == big-desktop {
-  @media (min-width: 112.5em) {
-   @content;
-  } // > 1800px
- }
-}
+// @mixin respond($breakpoint) {
+//  @if $breakpoint == phone {
+//   @media (max-width: 37.5em) {
+//    @content;
+//   } // < 600px
+//  }
+//  @if $breakpoint == tab-port {
+//   @media (max-width: 56.25em) {
+//    @content;
+//   } // < 900px
+//  }
+//  @if $breakpoint == tab-land {
+//   @media (max-width: 75em) {
+//    @content;
+//   } // < 1200px
+//  }
+//  @if $breakpoint == big-desktop {
+//   @media (min-width: 112.5em) {
+//    @content;
+//   } // > 1800px
+//  }
+// }
 
 /* Reset */
 *,
@@ -58,17 +58,17 @@ html {
  // 10px as 1rem.
  font-size: 62.5%;
 
- @include respond(tab-land) {
-  // width < 1200?
-  font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25
- }
- @include respond(tab-port) {
-  // width < 900?
-  font-size: 50%; // 1rem = 8px, 8/16 = 50
- }
- @include respond(big-desktop) {
-  font-size: 75%; // 1 rem = 12px, 12/16 = 75
- }
+//  @include respond(tab-land) {
+//   // width < 1200?
+//   font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25
+//  }
+//  @include respond(tab-port) {
+//   // width < 900?
+//   font-size: 50%; // 1rem = 8px, 8/16 = 50
+//  }
+//  @include respond(big-desktop) {
+//   font-size: 75%; // 1 rem = 12px, 12/16 = 75
+//  }
 }
 
 body {
@@ -86,9 +86,9 @@ body {
  height: 100%;
  position: relative;
 
- @include respond(phone) {
-  padding: 1rem;
- }
+//  @include respond(phone) {
+//   padding: 1rem;
+//  }
 }
 
 .card {
@@ -111,7 +111,7 @@ body {
   backface-visibility: hidden; /* We don't want to see the back part of the element. */
   border-radius: 3px;
   overflow: hidden; /* The image is overflowing the parent. */
-  box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
+  box-shadow: 0 2rem 6rem rgba($color-black, 0.50);
 
   &--front {
    background-image:
@@ -158,7 +158,6 @@ body {
  }
 
  &__subject {
-  font-family: "Inconsolata", monospace;
   letter-spacing: 0.8rem;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -166,7 +165,6 @@ body {
  }
 
  &__title {
-  font-family: "VT323", monospace;
   text-transform: uppercase;
   font-size: 6rem;
   font-weight: 100;
@@ -198,7 +196,6 @@ body {
  }
 
  &__heading-span {
-  font-family: "VT323", monospace;
   font-size: 4.2rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -207,7 +204,6 @@ body {
  }
 
  &__details {
-  font-family: "Inconsolata", monospace;
   padding: 4rem 2rem;
   ul {
    list-style: none;
@@ -227,51 +223,5 @@ body {
  }
 
  // Responsivity
- @media only screen and (max-width: 37.5em), only screen and (hover: none) {
-  height: auto;
-  border-radius: 3px;
-  background-color: $color-white;
-  box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
-
-  &__side {
-   height: auto;
-   position: relative;
-   box-shadow: none;
-
-   &--front {
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-   }
-
-   &--back {
-    transform: rotateY(0);
-   }
-  }
-
-  &:hover &__side--front {
-   transform: rotateY(0);
-  }
-
-  &__details {
-   padding: 3rem 2rem;
-  }
-
-  // Front side responsive styling
-  &__theme {
-   position: relative;
-   top: 0;
-   left: 0;
-   transform: translate(0);
-   width: 100%;
-   padding: 5rem 4rem 1.5rem 4rem;
-   text-align: right;
-  }
-
-  &__theme-box {
-   margin-bottom: 1.5rem;
-  }
-
-  &__title {
-   font-size: 4rem;
-  }
- }
+ 
 }
