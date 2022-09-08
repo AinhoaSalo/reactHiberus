@@ -1,5 +1,5 @@
 // Colors
-$background-color: #94B0B2;
+$background-color: #white;
 $color-primary-light: #D4E586;
 $color-primary-dark: #AAAD9A;
 $color-black: #000;
@@ -70,7 +70,9 @@ html {
 //   font-size: 75%; // 1 rem = 12px, 12/16 = 75
 //  }
 }
-
+p{
+  padding-top: 60%;
+}
 body {
  height: 100vh;
  background-color: $background-color;
@@ -114,11 +116,6 @@ body {
   box-shadow: 0 2rem 6rem rgba($color-black, 0.50);
 
   &--front {
-   background-image:
-    url("../../../public/images/Morty.jpeg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
   
   }
  
@@ -185,7 +182,7 @@ body {
     rgba($color-primary-dark, 0.65),
     rgba($color-primary-light, 0.65)
    ),
-   url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+    url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
  }
 
  &__heading {

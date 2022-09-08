@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Card } from '../../components/Card/Card.jsx'
 import "./Personajes.css"
 import { getPersonajes } from '../../services/commonService.js'
@@ -6,17 +6,28 @@ import { getPersonajes } from '../../services/commonService.js'
 //PINTAR DATOS PARA LUIS
 
 export const Personajes = () => {
+  const [personajes, setPersonajes] = useState([])
 
-  const [first, setfirst] = useState(second)
   useEffect(() => {
-    
-  
+    getPersonajes().then(results => {
+      // console.log(results)
+      setPersonajes(results)
+
+    })
   }, [])
-  
+
   return (
-    <div className='container'>
-      <Card name='Morty' />
-      <Card name='Morty2' />
+    <div>
+      {
+        // personajes.map(({name, id, image})=>{
+        
+        //   <Card key={id} name={name} id={id} image={image}/>
+          
+        // })
+
+        personajes.map(per => <Card key={per.id} name={per.name} image={per.image} id={per.id}/>)
+
+      }
     </div>
   )
 }
