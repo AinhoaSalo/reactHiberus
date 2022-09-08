@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getDetailPersonaje } from '../../services/commonService'
-import "./DetailView.css"
+import "./DetailViewPersonaje.css"
 
 export const DetailView = () => {
   const [personaje, setPersonaje] = useState([])

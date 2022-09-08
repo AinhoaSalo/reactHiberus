@@ -8,7 +8,7 @@ import { Home } from "./pages/Home/Home"
 import { Episodios } from "./pages//Episodios/Episodios"
 import { Personajes } from "./pages/Personajes/Personajes"
 import { Formulario } from "./pages/Formularios/Formulario"
-import { DetailView } from "./components/DetailView/DetailView.jsx"
+import { DetailView } from "./components/DetailViewPersonaje/DetailViewPersonaje"
 
 //https://mycolor.space/?hex=%23004165&sub=1 paleta colores elegida Dotting Palette
 //Colores: Verde #D4E586, azul chillon #00DEEA azul mas oscuro tirando a gris #94B0B2 y gris marron #AAAD9A
