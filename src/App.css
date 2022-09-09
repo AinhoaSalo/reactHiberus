@@ -1,6 +1,17 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Shlop;
+  src: url(./fonts/shlop_rg.ttf);
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }
+
+.App {
+  font-family: Shlop;
+}
+/* body{
+  font-family: Shlop;
+
+} */
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +47,5 @@
     transform: rotate(360deg);
   }
 }
+
+
