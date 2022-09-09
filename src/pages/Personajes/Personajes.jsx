@@ -10,7 +10,6 @@ export const Personajes = () => {
 
   useEffect(() => {
     getPersonajes().then(results => {
-      // console.log(results)
       setPersonajes(results)
 
     })
@@ -19,11 +18,6 @@ export const Personajes = () => {
   return (
     <div>
       {
-        // personajes.map(({name, id, image})=>{
-        
-        //   <Card key={id} name={name} id={id} image={image}/>
-          
-        // })
 
         personajes.map(per => <Card key={per.id} name={per.name} image={per.image} id={per.id}/>)
 

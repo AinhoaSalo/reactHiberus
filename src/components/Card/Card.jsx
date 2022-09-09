@@ -24,7 +24,7 @@ export const Card = ({ name, id, image }) => {
                         </div>
                   
                 </div>
-
+            
                 <div className="card__side card__side--front" style={{
                     backgroundImage: "url(" + `${image}` + ")",
                     backgroundPosition: 'center',
