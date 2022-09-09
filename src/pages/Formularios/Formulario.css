@@ -1,0 +1,19 @@
+.formulario{
+   display: flex;
+   justify-content: center;
+   min-height: max-content;
+   background-color: transparent;
+
+}
+.titulo{
+    font-size: x-large;
+    color: #D4E586;
+}
+
+.label{
+    color:#00DEEA;
+}
+.button{
+    background-color: #D4E586;
+
+}

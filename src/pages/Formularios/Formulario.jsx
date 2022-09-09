@@ -1,39 +1,41 @@
 import React from "react";
+import { useState, useEffect} from "react";
+import "./Formulario.css"
 
-class Formulario extends React.Component{
-    render(){
-        return(
-            <div>
-                <h1>Contacto</h1>
-                <form>
-                    <div>
-                        <label>Nombre:</label>
-                        <input type="text" name="nombre" onChange={this.props.onChange} value={this.props.formValues.nombre}/>
-                    </div>
-                    <div>
-                        <label>Apellidos:</label>
-                        <input type="text" name="apellidos" onChange={this.props.onChange} value={this.props.formValues.apellidos}/>
-                    </div>
-                    <div>
-                        <label>Email:</label>
-                        <input type="text" name="email" onChange={this.props.onChange} value={this.props.formValues.email}/>
-                    </div>
-                    <div>
-                        <label>Motivo de consulta:</label>
-                        <input type="text" name="motCon" onChange={this.props.onChange} value={this.props.formValues.motCon}/>
-                    </div>
-                    <div>
-                        <label>Escriba su mensaje:</label>
-                        <input type="text" name="mensaje" onChange={this.props.onChange} value={this.props.formValues.mensaje}/>
-                    </div>
-                    <div>
-                        <button type="button">Enviar</button>
-                    </div>
-                </form>
-            </div>
+export function Formulario() {
+    let [nameUserRegister, setNameUserRegister] = useState("");
+
+
+
+  return (
+    <div className="formulario">
+      <h1 className="titulo">Contacto</h1>
+      <form>
+        <div>
+          <label className="label">Nombre:</label>
+          <input type="text" name="nombre" />
+        </div>
+        <div>
+          <label className="label">Apellidos:</label>
+          <input type="text" name="apellidos" />
+        </div>
+        <div>
+          <label className="label">Email:</label>
+          <input type="text" name="email" />
+        </div>
+        <div>
+          <label className="label">Motivo de consulta:</label>
+          <input type="text" name="motCon" />
+        </div>
+        <div>
+          <label className="label">Escriba su mensaje:</label>
+          <input type="textarea" name="mensaje" />
+        </div>
+        <div>
+          <button type="button" className="button">Enviar</button>
+        </div>
+      </form>
+    </div>
             
-        );
-    }
+  );
 }
-
-export {Formulario};
