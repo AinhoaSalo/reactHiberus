@@ -4,6 +4,7 @@ const routes = {
   PERSONAJESDETAIL: "/personajes/:id",
   EPISODIOS: "/episodios",
   CONTACTO: "/contacto",
+  JUEGO: "/juego",
 }
 
 export default routes
