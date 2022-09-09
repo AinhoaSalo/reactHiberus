@@ -1,0 +1,169 @@
+header {
+  position: fixed;
+}
+
+@media (min-width: 768px) {
+  header {
+    position: sticky;
+  }
+}
+
+.nav-btn {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  aspect-ratio: 1;
+  padding: 1rem;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+}
+
+.line {
+  position: relative;
+}
+
+.line::before {
+  top: -10px;
+}
+.line::after {
+  top: 10px;
+}
+
+.line::before,
+.line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.line,
+.line::before,
+.line::after {
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  transform-origin: center;
+  transition: all 250ms ease-in-out;
+}
+
+.nav-btn.open > .line {
+  rotate: 45deg;
+}
+.nav-btn.open > .line::before {
+  translate: 0 10px;
+  rotate: -90deg;
+}
+.nav-btn.open > .line::after {
+  translate: 0 -10px;
+  rotate: -90deg;
+}
+
+.nav-bg {
+  position: fixed;
+  right: 0;
+
+  overflow: hidden;
+  width: 5rem;
+  aspect-ratio: 1;
+
+  border-bottom-left-radius: 100%;
+  background-color: hsl(0, 0%, 0%, 0.7);
+  transform-origin: top right;
+  transition: scale 250ms ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .nav-bg {
+    display: none;
+  }
+}
+
+.nav-bg.open {
+  scale: 50;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    position: static;
+    background-color: hsl(0, 0%, 0%, 0.7);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.nav.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
+  margin-inline: auto;
+
+  width: min(90%, max-content);
+  height: 100vh;
+  overflow: auto;
+
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .nav-list {
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    margin-inline: 0;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  width: 100%;
+
+  padding: 1rem 2rem;
+  font-size: 1.75rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-color: transparent;
+
+  color: #fff;
+
+  transition: text-decoration-color 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
+
+.nav-link:where(:hover, :focus, .active) {
+  --hvr-color: orange;
+  color: var(--hvr-color);
+  text-decoration-color: var(--hvr-color);
+}
