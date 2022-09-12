@@ -4,7 +4,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    position: sticky;
+    position: static;
   }
 }
 

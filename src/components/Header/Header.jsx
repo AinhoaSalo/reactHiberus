@@ -1,7 +1,8 @@
-import "./NavBar.css"
-import { routes } from "../../config/routes"
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
+
+import "./Header.css"
+import { routes } from "../../config/routes"
 
 const links = [
   [routes.HOME, "Home"],
@@ -11,7 +12,7 @@ const links = [
   [routes.CONTACTO, "Contacto"],
 ]
 
-export const NavBar = () => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   const onClick = () => setIsOpen((prev) => !prev)
 
@@ -25,7 +26,7 @@ export const NavBar = () => {
         <ul className="nav-list">
           {links.map(([route, label], i) => (
             <li key={`nav_${i}`}>
-              <NavLink className="nav-link" to={route}>
+              <NavLink className="nav-link" to={route} onClick={onClick}>
                 {label}
               </NavLink>
             </li>

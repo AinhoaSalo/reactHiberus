@@ -1,8 +1,9 @@
 const routes = {
   HOME: "/",
   PERSONAJES: "/personajes",
-  PERSONAJESDETAIL: "/personajes/:id",
+  PERSONAJE: "/personajes/:id",
   EPISODIOS: "/episodios",
+  EPISODIO: "/episodios/:id",
   CONTACTO: "/contacto",
   JUEGO: "/juego",
 }
