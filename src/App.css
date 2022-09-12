@@ -9,3 +9,9 @@
   font-family: Shlop;
   font-size: 24px;
 }
+
+/*Esto sirve para que el footer esté abajo del todo*/
+main{
+  min-height: calc(109vh - 316px);
+  z-index: 0;
+}
