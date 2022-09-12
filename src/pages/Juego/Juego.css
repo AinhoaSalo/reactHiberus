@@ -1,0 +1,8 @@
+.cartaTraseraJuego{
+    display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: repeat(4,1fr);
+  padding: 30px 60px;
+  margin: 0px 50px;
+}
