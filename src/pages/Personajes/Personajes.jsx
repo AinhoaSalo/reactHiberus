@@ -16,7 +16,7 @@ export const Personajes = () => {
   }, [])
 
   return (
-    <div>
+    <div className='containerPersonajes'>
       {
 
         personajes.map(per => <Card key={per.id} name={per.name} image={per.image} id={per.id}/>)

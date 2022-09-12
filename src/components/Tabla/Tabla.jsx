@@ -9,7 +9,7 @@ export const Tabla = ({ name, episode, id }) => {
         <tr>
             <th> {episode} </th>
             <td> {name} </td>
-            <td><Link className="" to={`${id}`}> <button> Mas Informacion</button> </Link></td>
+            <td><Link className="" to={`${id}`}> <button className='loader-button'> Mas Informacion</button> </Link></td>
         </tr>
     )
 }

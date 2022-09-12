@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Tabla } from '../../components/Tabla/Tabla.jsx'
 import { getEpisodios } from '../../services/commonService.js'
+import "./Episodios.css"
 
 export const Episodios = () => {
   const [episodios, setEpisodios] = useState([])
@@ -16,8 +17,8 @@ export const Episodios = () => {
 
   return (
 
-    <div>
-      <table>
+    <div className='containerEpisodios'>
+      <table className='tablaEpisodios'>
         <thead>
           <tr>
             <th> Episodio </th>

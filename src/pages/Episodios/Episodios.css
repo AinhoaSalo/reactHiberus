@@ -1,0 +1,9 @@
+.containerEpisodios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tablaEpisodios{
+    width: 70%;
+}

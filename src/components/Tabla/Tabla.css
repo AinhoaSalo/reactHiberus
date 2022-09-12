@@ -3,7 +3,7 @@ table {
     margin-top: 80px;
     /* border: 1px solid #343a40; */
     border-collapse: collapse;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 th,
@@ -14,7 +14,7 @@ td {
 }
 
 thead th {
-    background-color: #087f5b;
+    background-color: #d4e586;
     color: #fff;
     width: 25%;
 }
@@ -25,4 +25,23 @@ tbody tr:nth-child(even) {
 
 tbody tr:nth-child(odd) {
     background-color: #e9ecef;
+}
+.loader-button {
+    position: relative;
+    display: inline-block;
+    /* padding: 0 10rem; */
+    outline: none;
+    border: none;
+    background: #d4e586;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-family: Shlop;
+    line-height: 4;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }

@@ -1,222 +1,180 @@
 // Colors
 $background-color: white;
-$color-primary-light: #D4E586;
-$color-primary-dark: #AAAD9A;
+$color-primary-light: #d4e586;
+$color-primary-dark: #aaad9a;
 $color-black: #000;
 $color-gray-dark: #aaa;
 $color-gray-light: #eee;
 $color-white: #fff;
 
 //Colores: Verde #D4E586, azul chillon #00DEEA azul mas oscuro tirando a gris #94B0B2 y gris marron #AAAD9A
-// Mixins
 @mixin absCenter {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin flexCenter {
- flex-flow: row;
- align-items: center;
- justify-content: center;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
 }
 
-// @mixin respond($breakpoint) {
-//  @if $breakpoint == phone {
-//   @media (max-width: 37.5em) {
-//    @content;
-//   } // < 600px
-//  }
-//  @if $breakpoint == tab-port {
-//   @media (max-width: 56.25em) {
-//    @content;
-//   } // < 900px
-//  }
-//  @if $breakpoint == tab-land {
-//   @media (max-width: 75em) {
-//    @content;
-//   } // < 1200px
-//  }
-//  @if $breakpoint == big-desktop {
-//   @media (min-width: 112.5em) {
-//    @content;
-//   } // > 1800px
-//  }
-// }
-
-/* Reset */
 *,
 *::after,
 *::before {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
- // 10px as 1rem.
-//  font-size: 62.5%;
-
-//  @include respond(tab-land) {
-//   // width < 1200?
-//   font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25
-//  }
-//  @include respond(tab-port) {
-//   // width < 900?
-//   font-size: 50%; // 1rem = 8px, 8/16 = 50
-//  }
-//  @include respond(big-desktop) {
-//   font-size: 75%; // 1 rem = 12px, 12/16 = 75
-//  }
-}
-
-body {
- height: 100vh;
- background-color: $background-color;
-}
-.card__title{
-  color:black;
+.card__title {
+  color: black;
   padding-top: 60%;
 }
 .artboard {
- display: flex;
- @include flexCenter;
- padding: 4rem;
- height: 100%;
- position: relative;
-
-//  @include respond(phone) {
-//   padding: 1rem;
-//  }
+  display: flex;
+  @include flexCenter;
+  padding: 4rem;
+  height: 100%;
+  position: relative;
 }
 
 .card {
- flex: initial;
- position: relative;
- height: 52rem;
- width: 48rem;
- -moz-perspective: 200rem;
- perspective: 200rem;
- margin: 2rem;
-
- &__side {
-  height: 52rem;
-  transition: all 0.8s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-backface-visibility: hidden; /* We don't want to see the back part of the element. */
-  backface-visibility: hidden; /* We don't want to see the back part of the element. */
-  border-radius: 3px;
-  overflow: hidden; /* The image is overflowing the parent. */
-  box-shadow: 0 2rem 6rem rgba($color-black, 0.50);
-
-  &--front {
-  
-  }
- 
-  &--back {
-   background-color: $background-color;
-
-   background-image: 
-   url("../../../public/images/portal.gif");
-
-   background-position: center; /* Center the image */
-   background-repeat: no-repeat; /* Do not repeat the image */
-   background-size: cover; /* Resize the background image to cover the entire container */
-
-   transform: rotateY(180deg);
-   
-  }
- }
-
- &:hover &__side--back {
-  transform: rotateY(0);
- }
- &:hover &__side--front {
-  transform: rotateY(-180deg);
- }
-
- // Front side of the card
- &__theme {
-  @include absCenter;
-  top: 54%;
-  width: 90%;
-  text-align: center;
- }
-
- &__theme-box {
-  color: $color-white;
-  margin-bottom: 8rem;
- }
-
- &__subject {
-  letter-spacing: 0.8rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
- }
-
- &__title {
-  text-transform: uppercase;
-  font-size: 6rem;
-  font-weight: 100;
- }
- 
- // Back side of the card
- &__cover {
+  flex: initial;
   position: relative;
-  background-size: cover;
-  height: 14rem;
-  // background-blend-mode: screen;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background-image: linear-gradient(
-    to top right,
-    rgba($color-primary-dark, 0.65),
-    rgba($color-primary-light, 0.65)
-   ),
-    url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
- }
+  height: 25rem;
+  width: 24rem;
+  -moz-perspective: 200rem;
+  perspective: 200rem;
+  margin: 2rem;
 
- &__heading {
-  text-align: center;
-  color: $color-white;
-  @include absCenter;
-  width: 75%;
- }
+  &__side {
+    height: 25rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden; /* We don't want to see the back part of the element. */
+    backface-visibility: hidden; /* We don't want to see the back part of the element. */
+    border-radius: 3px;
+    overflow: hidden; /* The image is overflowing the parent. */
+    box-shadow: 0 2rem 6rem rgba($color-black, 0.5);
 
- &__heading-span {
-  font-size: 4.2rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 1rem 1.5rem;
-  color: $color-white;
- }
+    &--back {
+      background-color: $background-color;
 
- &__details {
-  padding: 4rem 2rem;
-  ul {
-   list-style: none;
-   width: 80%;
-   margin: 0 auto;
+      background-image: url("../../../public/images/portal.gif");
 
-   li {
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 1rem;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
 
-    &:not(:last-child) {
-     border-bottom: 1px solid $color-gray-light;
+      transform: rotateY(180deg);
     }
-   }
   }
- }
 
- // Responsivity
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  // Front side of the card
+  &__theme {
+    @include absCenter;
+    top: 54%;
+    width: 90%;
+    text-align: center;
+  }
+
+  &__theme-box {
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__subject {
+    letter-spacing: 0.8rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  // Back side of the card
+  &__cover {
+    position: relative;
+    background-size: cover;
+    height: 14rem;
+    // background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image: linear-gradient(to top right, rgba($color-primary-dark, 0.65), rgba($color-primary-light, 0.65)),
+      url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  }
+
+  &__heading {
+    text-align: center;
+    color: $color-white;
+    @include absCenter;
+    width: 75%;
+  }
+
+  &__heading-span {
+    font-size: 4.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    color: $color-white;
+  }
+
+  &__details {
+    padding: 4rem 2rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-gray-light;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1639.99px) and (min-width: 668px) {
+  .artboard {
+    width: 49%;
+  }
  
+}
+
+@media (min-width: 1640px) {
+  .artboard {
+    width: 49%;
+  }
+  .card {
+    height: 50rem;
+    width: 48rem;
+    object-fit: cover;
+    &__side {
+      height: 50rem;
+    }
+  }
 }

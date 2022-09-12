@@ -19,8 +19,8 @@ export const DetailViewPersonaje = () => {
   console.log(personaje)
 
   return (
-
+    <div className='containerDetailViewPersonaje'>
     <DetailViewPersonajeComponent key={personaje.id} name={personaje.name} status={personaje.status} species={personaje.species} gender={personaje.gender} image={personaje.image} episodes={personaje.episodes} />
-
+    </div>
   )
 }
