@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 
 import "./App.css"
 import { routes } from "./config/routes"
-import { NavBar } from "./components/NavBar/NavBar"
+import { Header } from "./components/Header"
 import { Footer } from "./components/Footer/Footer"
 import { Home } from "./pages/Home/Home"
 import { Episodios } from "./pages//Episodios/Episodios"
@@ -17,24 +17,20 @@ import { DetailViewEpisodio } from "./pages/DetailViewEpisodio/DetailViewEpisodi
 function App() {
   return (
     <div className="App">
-      <Router>
-        <header>
-          <NavBar />
-        </header>
-        <main>
-          <Routes>
-            <Route exact path={routes.HOME} element={<Home />} />
-            <Route exact path={routes.PERSONAJES} element={<Personajes />} />
-            <Route exact path="/personajes/:id" element={<DetailViewPersonaje />} />
-            <Route exact path={routes.EPISODIOS} element={<Episodios />} />
-            <Route exact path="/episodios/:id" element={<DetailViewEpisodio />} />
-            <Route exact path={routes.CONTACTO} element={<Formulario />} />
-          </Routes>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path={routes.HOME} element={<Home />} />
+          <Route path={routes.PERSONAJES} element={<Personajes />} />
+          <Route path={routes.PERSONAJE} element={<DetailViewPersonaje />} />
+          <Route path={routes.EPISODIOS} element={<Episodios />} />
+          <Route path={routes.EPISODIO} element={<DetailViewEpisodio />} />
+          <Route path={routes.CONTACTO} element={<Formulario />} />
+        </Routes>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
