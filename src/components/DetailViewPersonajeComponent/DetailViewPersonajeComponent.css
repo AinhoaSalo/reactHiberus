@@ -1,0 +1,176 @@
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  color: #ffc107;
+  background-color: rgba(128, 128, 128, 0.685);
+  border-radius: 10px;
+  padding: 10% 5%;
+  height: 600px;
+  margin: 50px;
+  text-align: center;
+}
+
+.textCard {
+  align-content: center;
+}
+
+.texto {
+  font-size: 15px;
+  list-style: none;
+}
+
+.imgCard {
+  position: relative;
+  float: left;
+}
+
+.imgMarco {
+  position: absolute;
+  z-index: 1;
+  top: 26px;
+  right: -4px;
+  height: 276px;
+  width: 285px;
+}
+
+.imgNave {
+  position: absolute;
+  z-index: 0;
+  top: 75px;
+  right: 30px;
+  height: 164px;
+  width: 210px;
+}
+
+@media (max-width: 898.99px) and (min-width: 790px) {
+  .texto {
+    font-size: 16px;
+  }
+
+  .imgMarco {
+    top: -19px;
+    right: 59px;
+    height: 366px;
+    width: 485px;
+  }
+
+  .imgNave {
+    top: 45px;
+    right: 118px;
+    height: 235px;
+    width: 352px;
+  }
+}
+
+@media (max-width: 949.99px) and (min-width: 870px) {
+  .cardDetail {
+    justify-content: space-between;
+    flex-direction: row;
+    height: 400px;
+    /* padding: 10% 0;  */
+    text-align: justify;
+  }
+
+  .texto {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .imgMarco {
+    top: -39px;
+    right: -47px;
+    height: 300px;
+    width: 340px;
+  }
+
+  .imgNave {
+    top: 14px;
+    right: -6px;
+    height: 180px;
+    width: 248px;
+  }
+}
+
+@media (max-width: 1089.99px) and (min-width: 950px) {
+  .cardDetail {
+    justify-content: space-between;
+    flex-direction: row;
+    height: 420px;
+    text-align: justify;
+  }
+
+  .texto {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .imgMarco {
+    top: -81px;
+    right: -21px;
+    height: 390px;
+    width: 415px;
+  }
+
+  .imgNave {
+    top: -15px;
+    right: 22px;
+    height: 254px;
+    width: 308px;
+  }
+}
+
+@media (max-width: 1321.99px) and (min-width: 1090px) {
+  .cardDetail {
+    justify-content: space-between;
+    flex-direction: row;
+    height: 520px;
+    text-align: justify;
+  }
+
+  .texto {
+    font-size: 17px;
+    width: 75%;
+  }
+
+  .imgMarco {
+    top: -81px;
+    right: -38px;
+    height: 420px;
+    width: 439px;
+  }
+
+  .imgNave {
+    top: -8px;
+    right: 17px;
+    height: 254px;
+    width: 319px;
+  }
+}
+
+@media (min-width: 1322px) {
+  .cardDetail {
+    justify-content: space-between;
+    flex-direction: row;
+    height: 550px;
+    text-align: justify;
+  }
+
+  .texto {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .imgMarco {
+    top: -151px;
+    right: -42px;
+    height: 520px;
+    width: 640px;
+  }
+
+  .imgNave {
+    top: -63px;
+    right: 44px;
+    height: 323px;
+    width: 459px;
+  }
+}

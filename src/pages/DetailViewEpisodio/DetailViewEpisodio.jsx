@@ -18,7 +18,7 @@ export const DetailViewEpisodio = () => {
   
     return (
   
-      <DetailViewEpisodioComponent key={episodio.id} name={episodio.name} characters={episodio.characters} created={episodio.created} id={episodio.id}/>
+      <DetailViewEpisodioComponent key={episodio.id} name={episodio.name} characters={episodio.characters} created={episodio.created} id={episodio.id} air_date={episodio.air_date} episode={episodio.episode}/>
   
     )
 }
