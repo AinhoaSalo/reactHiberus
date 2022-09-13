@@ -132,6 +132,8 @@
   text-align: center;
   text-decoration-color: transparent;
   font-size: 2rem;
+
+  transition: color 100ms ease-in-out, text-decoration-color 100ms ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -140,7 +142,7 @@
   }
 }
 
-.nav-link.active {
+.nav-link:where(.active, :hover, :focus) {
   color: hsl(197, 71%, 73%);
   text-decoration-color: inherit;
 }
