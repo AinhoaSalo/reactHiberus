@@ -17,7 +17,7 @@ import { Juego } from "./pages/Juego/Juego"
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <main>
         <Routes>
@@ -30,10 +30,8 @@ function App() {
           <Route path={routes.JUEGO} element={<Juego />}/>
         </Routes>
       </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+      <Footer />
+    </>
   )
 }
 
