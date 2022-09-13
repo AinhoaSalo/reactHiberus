@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Shlop;
+  src: url(./fonts/shlop_rg.ttf);
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
 *,
 *::before,
 *::after {
@@ -8,7 +15,8 @@
 
 body {
   margin: 0;
-  font-family: "Cantarell";
+  font-family: Shlop, "Cantarell";
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

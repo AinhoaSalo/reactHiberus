@@ -1,17 +1,5 @@
-@font-face {
-  font-family: Shlop;
-  src: url(./fonts/shlop_rg.ttf);
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
-
-.App {
-  font-family: Shlop;
-  font-size: 24px;
-}
-
 /*Esto sirve para que el footer esté abajo del todo*/
-main{
+main {
   min-height: calc(109vh - 316px);
   z-index: 0;
 }

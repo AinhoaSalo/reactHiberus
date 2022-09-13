@@ -1,4 +1,4 @@
-const routes = {
+export const routes = {
   HOME: "/",
   PERSONAJES: "/personajes",
   PERSONAJE: "/personajes/:id",
@@ -7,5 +7,3 @@ const routes = {
   CONTACTO: "/contacto",
   JUEGO: "/juego",
 }
-
-export default routes
