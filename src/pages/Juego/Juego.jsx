@@ -7,21 +7,25 @@ import './Juego.css'
 export function Juego() {
 
 
-    useEffect(() => {
-        for (let i = 0; i < 16; i++) {
-            document.querySelector('.cartaTraseraJuego').innerHTML += `<img className='imgCartaTrasera' src=${cartaTrasera} alt="Carta Trasera" />`;
-        }
+    const [personajes, setPersonajes] = useState([])
 
+    useEffect(() => {
+        getPersonajes().then(results => {
+            setPersonajes(results)
+
+        })
     }, [])
 
 
 
     return (
         <>
-            <section className='delanteraTrasera'>
-                <div className='cartaTraseraJuego'></div>
-                <div className='cartaDelanteraJuego'></div>
-            </section>
+            <div className='delanteraTrasera'>
+                <div className='cartaTraseraJuego'>
+                    <img className='imgCartaTrasera' src={cartaTrasera} alt="Carta Trasera" />
+                </div>
+                <div className='imgCartaDelantera'><p>hola</p></div>
+            </div>
         </>
     )
 }

@@ -1,8 +1,3 @@
-.delanteraTrasera{
-  display: flex;
-  flex-direction: row;
-}
-
 .cartaTraseraJuego {
   display: grid;
   justify-content: center;
@@ -10,4 +5,14 @@
   grid-template-columns: repeat(4, 1fr);
   padding: 30px 60px;
   margin: 0px 50px;
+}
+
+.imgCartaTrasera{
+  width: 150px;
+}
+
+.imgCartaDelantera{
+  background-color: aquamarine;
+  width: 150px;
+  height: auto;
 }
