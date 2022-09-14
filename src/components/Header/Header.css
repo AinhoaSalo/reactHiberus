@@ -143,6 +143,6 @@
 }
 
 .nav-link:where(.active, :hover, :focus) {
-  color: hsl(197, 71%, 73%);
+  color: #00deea;
   text-decoration-color: inherit;
 }
