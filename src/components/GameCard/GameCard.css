@@ -1,0 +1,30 @@
+.game-card {
+  flex-grow: 1;
+  position: relative;
+
+  border: 1px solid #000;
+
+  transform-style: preserve-3d;
+  transition: rotate 250ms ease-in-out;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+
+  background-size: 150px 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  backface-visibility: hidden;
+}
+
+.game-card.flipped,
+.card-front {
+  rotate: y 180deg;
+}
+
+.card-back {
+  background-image: url(../../assets/images/carta.png);
+}
