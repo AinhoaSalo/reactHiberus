@@ -1,73 +1,36 @@
-import React from "react";
-import "./Footer.css";
-import cookie from "../../images/cookie1.png";
-import gitHub from "../../images/logo-GitHub.png";
-import Notificaciones from "../../pages/Notifications/Notifications";
+import React from "react"
+import "./Footer.css"
+import cookie from "../../images/cookie1.png"
+import Notificaciones from "../../pages/Notifications/Notifications"
+import { GithubLogo } from "../GithubLogo"
 
 // Noe se encarga
+const links = [
+  { href: "https://github.com", title: "Github Ainhoa" },
+  { href: "https://github.com/JulenMendioroz", title: "Github Julen" },
+  { href: "https://github.com", title: "Github Luis" },
+  { href: "https://github.com", title: "Github Raquel" },
+  { href: "https://github.com", title: "Github Noe" },
+]
+
 export const Footer = () => {
   return (
-
     <footer className="footer">
-      <div className="container_footer">  
+      <div className="container_footer">
         <ul className="list_footer">
-          <li className="li_list_footer">
-            <a
-              className=""
-              href="https://github.com"
-              title="GitHub Ainhoa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gitHub} alt="logo" className="img_gh" />
-            </a>
-          </li>
-          <li className="li_list_footer">
-            <a
-              className=""
-              href="https://github.com"
-              title="GitHub Julen"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gitHub} alt="logo" className="img_gh" />
-            </a>
-          </li>
-
-          <li className="li_list_footer">
-            <a
-              className=""
-              href="https://github.com"
-              title="GitHub Luis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gitHub} alt="logo" className="img_gh" />
-            </a>
-          </li>
-
-          <li className="li_list_footer">
-            <a
-              className="footer__link"
-              href="https://github.com"
-              title="GitHub Raquel"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gitHub} alt="logo" className="img_gh" />
-            </a>
-          </li>
-          <li className="li_list_footer">
-            <a
-              className=""
-              href="https://github.com"
-              title="GitHub Noe"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gitHub} alt="logo" className="img_gh" />
-            </a>
-          </li>
+          {links.map(({ href, title }) => (
+            <li key={title}>
+              <a
+                className="list_link"
+                href={href}
+                title={title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GithubLogo />
+              </a>
+            </li>
+          ))}
         </ul>
         <p className="text_footer">
           <span>&copy; 2022 From Héroes y Heroínas</span>
@@ -97,7 +60,7 @@ export const Footer = () => {
         <Notificaciones/>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

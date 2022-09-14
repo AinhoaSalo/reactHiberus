@@ -1,91 +1,58 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  text-decoration: none;
-  list-style-type: none;
-  }
-
 .footer {
-    /* font-size: 75%; */
-    background: linear-gradient(white, #00DEEA );
-    padding: 0 20px 30px 20px;
-    color:white;
-    /*height: 15vh;*/
-    
-    /*max-height: 15vh;
-    background-size: 20%;*/ 
+  background: linear-gradient(#fff, #00deea);
+  padding-block: 3rem;
+  color: #fff;
 }
 
-.container_footer{
+.container_footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.text_footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: left;
-  white-space: nowrap;
-  color: white;
-  margin-top: 0px;
-  size: 15vh;
-}
-
-.list_footer{
+.list_footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 1rem;
+
   list-style: none;
-  margin-top: 20%;
-  margin-bottom: 0%;
+}
+
+.list_link {
+  display: inline-flex;
+  padding: 0.25rem;
+  aspect-ratio: 1;
+
+  color: #000;
+  background-color: #fff;
+
+  border-radius: 50%;
+
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.list_link:visited {
+  color: initial;
+  text-decoration: none;
+}
+
+.list_link:is(:focus, :hover) {
+  color: inherit;
+  background-color: #00deea;
+}
+
+.text_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  margin: 1rem;
   text-align: center;
 }
-.li_list_footer{
-  margin-right: 20px;
-  margin-left: 20px;
-}
 
-.img_cookie{
-  width: 15px ;
-  height:15px ;
-}
-
-.img_gh{
-  object-fit: cover;
-  height: 15px;
+.img_cookie {
   width: 15px;
-  display: inline;
+  height: 15px;
 }
-
-.text_footer:hover{
-  text-decoration:underline;
-}
-
-.img_gh:visited{
-  border-color: #AAAD9A;
-  border-style: double;
-  border-width: 3px;
-}
-
-@media /*all and (max-width: 1639.99px) and*/ (min-width: 1000px){
-  
-  .container_footer{ 
-    display: flex;
-    flex-direction: row;
-  }
-  .list_footer{
-    margin-bottom: 0%;
-  }
-  .li_list_footer{
-    margin-bottom: 0%;
-}
-}
-/*
-@media (min-width: 1640px){
-
-}*/
