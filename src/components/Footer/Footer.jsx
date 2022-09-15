@@ -35,7 +35,7 @@ export const Footer = () => {
         <p className="text_footer">
           <span>&copy; 2022 From Héroes y Heroínas</span>
           {/*<span>Politica de privacidad</span>*/}
-          <a
+          <a className="estiloA"
             href="https://ayudaleyprotecciondatos.es/wp-content/uploads/2017/12/Pol%C3%ADtica-de-Privacidad-para-aplicaciones-m%C3%B3viles.docx.pdf"
             title="Política de privacidad"
             target="_blank"
@@ -43,7 +43,7 @@ export const Footer = () => {
           >
             Política de privacidad
           </a>
-          <a
+          <a className="estiloA"
             href="https://www.wonder.legal/es/modele/aviso-legal-condiciones-generales-uso?gclid=Cj0KCQjwjvaYBhDlARIsAO8PkE2P3vMxMa_km0JAmE22vFLX5YxX-vN3i3mMhVeVF899sAs0r3QttfkaAqnpEALw_wcB"
             title="Aviso legal"
             target="_blank"

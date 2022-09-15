@@ -1,28 +1,40 @@
 @charset "utf-8";
-.tarjeta{
-display:flex;
-flex-direction:row;
-justify-content:space-between;
-width:50rem;
-border: 1px solid lightgray;
-box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-border-radius:15px;
-margin-top: 29vh;
-margin-bottom: 29vh;
 
+.containerEpisodios {
+  padding-bottom: 100px;
 }
-.titulo{
-font-size: 24px;
-padding: 10px 10px 0 10px;;
+
+.tarjeta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50rem;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  margin-top: 29vh;
+  margin-bottom: 29vh;
 }
-.cuerpo{
-padding: 10px;
+
+.titulo {
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+  ;
 }
-.pie{
-padding: 10px;
-width: 100%;
+
+.cuerpo {
+  padding: 10px;
 }
-.lista{
-  list-style:none;
+
+.pie {
+  padding: 10px;
+  width: 100%;
+}
+
+.lista {
+  list-style: none;
   justify-items: center;
+}
+.texto{
+  font-family: 'Times New Roman', Times, serif;
 }

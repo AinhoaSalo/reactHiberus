@@ -9,7 +9,7 @@ export function Formulario() {
 
   return (
     <div className="formulario">
-      <h1 className="titulo">Contacto</h1>
+      <h1 className="tituloFormulario">Contacto</h1>
       <form>
         <div>
           <label className="label">Nombre:</label>
@@ -31,7 +31,7 @@ export function Formulario() {
           <label className="label">Escriba su mensaje:</label>
           <input type="textarea" name="mensaje" />
         </div>
-        <div>
+        <div className="buttonContainer">
           <button type="button" className="button">Enviar</button>
         </div>
       </form>

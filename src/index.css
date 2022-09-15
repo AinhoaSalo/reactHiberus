@@ -19,6 +19,8 @@ body {
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(99, 142, 145);
+  background: linear-gradient(0deg, rgba(0, 245, 255, 1) 0%, #5f5e5e 100%); */
 }
 
 code {

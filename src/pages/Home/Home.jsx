@@ -6,7 +6,7 @@ import { routes } from "../../config/routes"
 export const Home = () => {
   return (
     <>
-      <section className="todoHome">
+      <div className="todoHome">
         <Link className="seccionesHome" to={routes.PERSONAJES}>
           <h2 className="tituloSeccionesHome">Personajes</h2>
           <img
@@ -31,7 +31,7 @@ export const Home = () => {
             alt="Juego cartas"
           />
         </Link>
-      </section>
+      </div>
     </>
   )
 }

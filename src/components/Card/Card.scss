@@ -30,8 +30,10 @@ $color-white: #fff;
 }
 
 .card__title {
-  color: black;
+  color: white;
   padding-top: 60%;
+  text-shadow: 0 0 25px black;
+
 }
 .artboard {
   display: flex;
@@ -167,14 +169,15 @@ $color-white: #fff;
 
 @media (min-width: 1640px) {
   .artboard {
-    width: 49%;
+    width: 33%;
   }
   .card {
-    height: 50rem;
-    width: 48rem;
+    height: 30rem;
+    width: 38rem;
     object-fit: cover;
     &__side {
-      height: 50rem;
+      height: 30rem;
     }
   }
 }
+
