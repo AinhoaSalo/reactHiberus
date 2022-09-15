@@ -9,7 +9,7 @@ export function Formulario() {
 
   return (
     <div className="formulario">
-      <h1 className="titulo">Contacto</h1>
+      <h1 className="tituloFormulario">Contacto</h1>
       <form>
         <div>
           <label className="label">Nombre:</label>
