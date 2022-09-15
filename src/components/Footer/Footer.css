@@ -1,24 +1,60 @@
 .footer {
-    /* font-size: 75%; */
-    background: linear-gradient(white, #00DEEA );
-    padding: 0 30px 0 30px;
+  background: linear-gradient(#5f5e5e, #00deea);
+  padding-block: 3rem;
+  color: #fff;
 }
-.container{
+
+.container_footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
-.text{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.list{
+.list_footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 1rem;
+
   list-style: none;
-  }
+}
+
+.list_link {
+  display: inline-flex;
+  padding: 0.25rem;
+  aspect-ratio: 1;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.list_link:visited {
+  color: initial;
+  text-decoration: none;
+}
+
+.list_link:is(:focus, :hover) {
+  color: inherit;
+  background-color: #00deea;
+}
+
+.text_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.img_cookie {
+  width: 15px;
+  height: 15px;
+}
+
+/*Se puede cambiar, lo he hecho por probar*/
+.estiloA{
+  cursor: pointer;
+  color: #ACD6EC;
+}

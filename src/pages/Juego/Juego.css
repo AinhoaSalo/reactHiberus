@@ -1,13 +1,16 @@
-.delanteraTrasera{
+.game-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 1rem;
+  gap: 0.5rem;
 }
 
-.cartaTraseraJuego {
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 30px 60px;
-  margin: 0px 50px;
+.card-slot {
+  display: flex;
+
+  width: 150px;
+  aspect-ratio: 5/7;
+  background: #555;
 }

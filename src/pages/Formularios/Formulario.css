@@ -1,20 +1,38 @@
-.formulario{
-   display: flex;
-   justify-content: center;
-   min-height: max-content;
-   background-color: transparent;
-   flex-direction: column;
-   align-items: center;
+.formulario {
+    display: flex;
+    justify-content: center;
+    min-height: max-content;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #00DEEA;
+    margin: 50px 550px;
+    padding: 40px 0 10px 0;
 }
-.titulo{
+
+.titulo {
     font-size: x-large;
-    color: #D4E586;
+    color: #D4E586; 
+    margin-bottom: 10px;
 }
 
-.label{
-    color:#00DEEA;
+.label {
+    color: #00DEEA;
+    float:left;
+    text-align:left;
+    width:200px;
 }
-.button{
+
+.buttonContainer{
+    margin: 30px;
+    display: grid;
+    place-content: center;
+}
+
+.button {
     background-color: #D4E586;
-
+    border: none;
+    color: #677b7c;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
