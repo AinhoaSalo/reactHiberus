@@ -1,8 +1,13 @@
 .game-card {
-  flex-grow: 1;
+  --card-radius: 0.5rem;
+
   position: relative;
 
-  border: 1px solid #000;
+  min-width: 100px;
+  aspect-ratio: 5/7;
+
+  border-radius: var(--card-radius);
+  background-color: hsl(205, 35%, 10%);
 
   transform-style: preserve-3d;
   transition: rotate 250ms ease-in-out;
@@ -13,18 +18,38 @@
   position: absolute;
   inset: 0;
 
-  background-size: 150px 210px;
+  border-radius: var(--card-radius);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   backface-visibility: hidden;
 }
 
-.game-card.flipped,
+.game-card:where(.flipped),
 .card-front {
   rotate: y 180deg;
 }
 
 .card-back {
-  background-image: url(../../assets/images/carta.png);
+  background-image: repeating-radial-gradient(
+    ellipse at center,
+    hsl(185, 70%, 45%),
+    hsl(185, 70%, 30%) 25%
+  );
+}
+
+.card-back::after {
+  content: "R&M";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-size: 3rem;
+
+  color: hsl(0, 0%, 0%, 0.9);
+
+  translate: -50% -50%;
+  rotate: -45deg;
 }

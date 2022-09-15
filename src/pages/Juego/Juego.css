@@ -1,16 +1,29 @@
 .game-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  --game-cols: 2;
+  --game-spacing: 0.75rem;
 
-  margin: 1rem;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(var(--game-cols), 1fr);
+  grid-gap: var(--game-spacing);
+
+  width: min-content;
+
+  margin-block-start: 5rem;
+  margin-inline: auto;
+  padding: var(--game-spacing);
+
+  border-radius: 0.5rem;
+
+  background: linear-gradient(to top left, hsl(0, 0%, 0%), hsl(203, 30%, 26%));
 }
 
-.card-slot {
-  display: flex;
-
-  width: 150px;
-  aspect-ratio: 5/7;
-  background: #555;
+@media (min-width: 375px) {
+  .game-container {
+    --game-cols: 3;
+  }
+}
+@media (min-width: 540px) {
+  .game-container {
+    --game-cols: 4;
+  }
 }
