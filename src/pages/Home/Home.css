@@ -28,10 +28,34 @@
     border-radius: 5px;
 }
 
+.sliderEstilo{
+    padding: 50px 30px;
+}
+
+@media (max-width: 799.99px) and (min-width: 600px) {
+
+    .sliderEstilo{
+        padding: 50px 100px;
+    }
+
+}
+
+@media (max-width: 999.99px) and (min-width: 800px) {
+
+    .sliderEstilo{
+        padding: 50px 200px;
+    }
+
+}
+
 @media (max-width: 1199.99px) and (min-width: 1000px) {
     .seccionesHome {
         display: flex;
         flex-direction: row;   
+    }
+
+    .sliderEstilo{
+        padding: 50px 300px;
     }
 
     .tituloSeccionesHome {
@@ -68,5 +92,10 @@
         height: 390px;
         margin: 0 20px;
     }
+
+    .sliderEstilo{
+        padding: 50px 400px;
+    }
+
 
 }

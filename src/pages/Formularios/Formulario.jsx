@@ -11,25 +11,25 @@ export function Formulario() {
     <div className="formulario">
       <h1 className="tituloFormulario">Contacto</h1>
       <form>
-        <div>
-          <label className="label">Nombre:</label>
-          <input type="text" name="nombre" />
+        <div className="labelInputFormulario">
+          <label className="labelFormulario">Nombre:</label>
+          <input className="inputFormulario" type="text" name="nombre" />
         </div>
-        <div>
-          <label className="label">Apellidos:</label>
-          <input type="text" name="apellidos" />
+        <div className="labelInputFormulario">
+          <label className="labelFormulario">Apellidos:</label>
+          <input className="inputFormulario" type="text" name="apellidos" />
         </div>
-        <div>
-          <label className="label">Email:</label>
-          <input type="text" name="email" />
+        <div className="labelInputFormulario">
+          <label className="labelFormulario">Email:</label>
+          <input className="inputFormulario" type="text" name="email" />
         </div>
-        <div>
-          <label className="label">Motivo de consulta:</label>
-          <input type="text" name="motCon" />
+        <div className="labelInputFormulario">
+          <label className="labelFormulario">Motivo de consulta:</label>
+          <input className="inputFormulario" type="text" name="motCon" />
         </div>
-        <div>
-          <label className="label">Escriba su mensaje:</label>
-          <input type="textarea" name="mensaje" />
+        <div className="labelInputFormulario">
+          <label className="labelFormulario">Escriba su mensaje:</label>
+          <input className="inputFormulario" type="textarea" name="mensaje" />
         </div>
         <div className="buttonContainer">
           <button type="button" className="button">Enviar</button>
