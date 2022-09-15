@@ -5,8 +5,6 @@ import { getCards, shuffle } from "../../utils/card-game"
 
 import "./Juego.css"
 
-const CardSlot = ({ children }) => <div className="card-slot">{children}</div>
-
 export const Juego = () => {
   const [cards, setCards] = useState([])
   const [activeCards, setActiveCards] = useState([])
@@ -46,7 +44,7 @@ export const Juego = () => {
   return (
     <div className="game-container">
       {cards.map(({ key, id, image }, index) => {
-        if (!activeCards[index]) return <CardSlot key={key} />
+        if (!activeCards[index]) return <div key={key} className="game-card" />
 
         const isFlipped = flippedCards.some((card) => card.index === index)
         const flip = () =>
@@ -55,9 +53,7 @@ export const Juego = () => {
             : null
 
         return (
-          <CardSlot key={key}>
-            <GameCard image={image} isFlipped={isFlipped} flip={flip} />
-          </CardSlot>
+          <GameCard key={key} image={image} isFlipped={isFlipped} flip={flip} />
         )
       })}
     </div>
