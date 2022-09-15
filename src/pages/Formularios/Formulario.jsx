@@ -31,7 +31,7 @@ export function Formulario() {
           <label className="label">Escriba su mensaje:</label>
           <input type="textarea" name="mensaje" />
         </div>
-        <div>
+        <div className="buttonContainer">
           <button type="button" className="button">Enviar</button>
         </div>
       </form>
