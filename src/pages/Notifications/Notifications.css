@@ -7,13 +7,13 @@
     list-style-type: none;
     }
 
-    .button_notification_container {
-   background-color: #00DEEA;
+
+    .btn_notification{
+       background-color: hsl(183, 100%, 46%);
+       text-decoration: none;
+       border: none;
+       color: white;
+       font-size: 1rem;
     }
-    .button_notification{
-        border: none;
-        margin: 5px 5px 5px 5px;
-     
-        color: white;
-        cursor: hand;
-    }
+
+    

@@ -1,0 +1,21 @@
+
+
+.imgSlider{
+    padding: 50px 20px;
+    height: 600px;
+}
+
+.slick-dots li button:before
+{
+    opacity: .50;
+    color: #F2E852 !important;
+
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: #F2E852 !important;
+}
+
+

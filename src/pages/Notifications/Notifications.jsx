@@ -4,6 +4,7 @@ import {
   NotificationContainer,
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
+import "./Notifications.css"
 
 function Notificaciones() {
   const lanzarNotificacion = (tipo) => {
@@ -27,8 +28,8 @@ function Notificaciones() {
   };
 
   return (
-    <div className="button_notification_container">
-      <button className= "button_notification" onClick={lanzarNotificacion("info")}>Pincha aquí, por favor :D</button>
+    <div className="btn_notification_container">
+      <button className= "btn_notification" onClick={lanzarNotificacion("info")}>¡Pincha aquí, por favor! </button>
       
 
       <div>
