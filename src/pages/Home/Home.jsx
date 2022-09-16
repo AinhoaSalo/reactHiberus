@@ -26,7 +26,7 @@ export const Home = () => {
             alt="Episodios"
           />
         </Link>
-        <Link className="seccionesHome" to={routes.HOME}>
+        <Link className="seccionesHome" to={routes.JUEGO}>
           <h2 className="tituloSeccionesHome">Juego memoria</h2>
           <img
             className="imgSeccionesHome"
@@ -35,9 +35,9 @@ export const Home = () => {
           />
         </Link>
       </div>
-      <div className="sliderEstilo">
+      {/* <div className="sliderEstilo">
         <SliderHome />
-      </div>
+      </div> */}
       
     </>
   )
