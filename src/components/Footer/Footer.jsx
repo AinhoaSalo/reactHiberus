@@ -1,16 +1,16 @@
 import React from "react"
 import "./Footer.css"
-import cookie from "../../images/cookie1.png"
+import cookie from "../../assets/images/cookie1.png"
 import Notificaciones from "../../pages/Notifications/Notifications"
 import { GithubLogo } from "../GithubLogo"
 
-// Noe se encarga
+
 const links = [
-  { href: "https://github.com", title: "Github Ainhoa" },
+  { href: "https://github.com/AinhoaSalo", title: "Github Ainhoa" },
   { href: "https://github.com/JulenMendioroz", title: "Github Julen" },
-  { href: "https://github.com", title: "Github Luis" },
-  { href: "https://github.com", title: "Github Raquel" },
-  { href: "https://github.com", title: "Github Noe" },
+  { href: "https://github.com/luisfaro13", title: "Github Luis" },
+  { href: "https://github.com/raqcar16", title: "Github Raquel" },
+  { href: "https://github.com/NoeliaPH", title: "Github Noe" },
 ]
 
 export const Footer = () => {

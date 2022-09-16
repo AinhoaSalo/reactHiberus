@@ -9,11 +9,13 @@
 
 
     .btn_notification{
-       background-color: hsl(183, 100%, 46%);
+       background-color: #F2E852;
        text-decoration: none;
        border: none;
-       color: white;
+       color: #525151;
        font-size: 1rem;
+       border-radius: 50%;
+       padding: 10px;
     }
 
     
