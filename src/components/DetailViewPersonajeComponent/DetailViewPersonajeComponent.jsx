@@ -6,7 +6,7 @@ export const DetailViewPersonajeComponent = ({ name, status, species, gender, im
   console.log(image)
   return (
 
-    <div className="tarjeta">
+    <div className="tarjetaPersonaje">
       <div className="cuerpo">
         <img src={image} alt="muestra" />
 

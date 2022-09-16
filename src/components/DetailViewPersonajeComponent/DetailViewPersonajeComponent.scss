@@ -1,5 +1,5 @@
 @charset "utf-8";
-.tarjeta{
+.tarjetaPersonaje{
 display:flex;
 flex-direction:row;
 justify-content:space-between;
@@ -7,10 +7,9 @@ width:50rem;
 border: 1px solid lightgray;
 box-shadow: 2px 2px 8px 4px #d3d3d3d1;
 border-radius:15px;
-margin-top: 29vh;
-margin-bottom: 29vh;
+margin-top: 10vh;
 background-color: rgb(192, 188, 188);
-
+padding: 5vh;
 
 }
 .titulo{
