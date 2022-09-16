@@ -1,4 +1,41 @@
 .game-container {
+  position: relative;
+
+  width: min-content;
+
+  margin-block-start: 5rem;
+  margin-inline: auto;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-top: 1rem;
+}
+
+.btn-restart {
+  font-family: inherit;
+  font-size: 1.25rem;
+
+  padding: 0.75rem 1.25rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: hsl(203, 30%, 26%);
+
+  transition: background-color 150ms ease-in-out;
+}
+
+.btn-restart:where(:focus, :hover) {
+  outline: none;
+  background-color: hsl(203, 30%, 16%);
+}
+
+.game-board {
   --game-cols: 2;
   --game-spacing: 0.75rem;
 
@@ -8,8 +45,6 @@
 
   width: min-content;
 
-  margin-block-start: 5rem;
-  margin-inline: auto;
   padding: var(--game-spacing);
 
   border-radius: 0.5rem;
@@ -18,12 +53,34 @@
 }
 
 @media (min-width: 375px) {
-  .game-container {
+  .game-board {
     --game-cols: 3;
   }
 }
 @media (min-width: 540px) {
-  .game-container {
+  .game-board {
     --game-cols: 4;
   }
+}
+
+.game-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.game-modal-body {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    to bottom left,
+    #5f5e5e,
+    hsl(185, 100%, 35%)
+  );
 }
