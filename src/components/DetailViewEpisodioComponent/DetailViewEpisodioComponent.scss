@@ -4,24 +4,22 @@
   padding-bottom: 100px;
 }
 
-.tarjeta {
+.tarjetaEpisodio {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50rem;
+  max-width: 80ch;
   border: 1px solid lightgray;
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
   border-radius: 15px;
-  margin-top: 29vh;
-  margin-bottom: 29vh;
+  background-color: rgb(192, 188, 188);
+  padding: 5vh;
 }
-
 .titulo {
   font-size: 24px;
   padding: 10px 10px 0 10px;
   ;
 }
-
 .cuerpo {
   padding: 10px;
 }
@@ -37,4 +35,10 @@
 }
 .texto{
   font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 766px) {
+  .tarjetaEpisodio {
+    margin: 8vh 2vh 0 2vh;
+  }
 }

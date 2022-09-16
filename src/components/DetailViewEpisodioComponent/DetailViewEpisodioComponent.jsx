@@ -4,7 +4,7 @@ import "./DetailViewEpisodioComponent.scss"
 export const DetailViewEpisodioComponent = ({ id, name, characters, created, air_date, episode }) => {
   return (
 
-    <div className="tarjeta">
+    <div className="tarjetaEpisodio">
       <div className="pie">
         <h1>{name}</h1>
         <ul className='lista'>

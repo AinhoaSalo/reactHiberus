@@ -6,8 +6,9 @@
     flex-direction: column;
     align-items: center;
     border: 1px solid #00DEEA;
-    margin: 50px 550px;
-    padding: 40px 0 10px 0;
+    margin: 5% 20%;
+    padding: 4% 0 6% 0;
+    border-radius: 5px;
 }
 
 .tituloFormulario {
@@ -16,11 +17,17 @@
     margin-bottom: 10px;
 }
 
-.label {
+.labelFormulario {
     color: white;
     float:left;
     text-align:left;
     width:200px;
+}
+
+.inputFormulario{
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
 }
 
 .buttonContainer{
@@ -30,9 +37,22 @@
 }
 
 .button {
-    background-color: #D4E586;
+    background-color: #F2E852;
     border: none;
     color: black;
     padding: 5px 10px;
     border-radius: 4px;
+    
+}
+
+@media (max-width: 620px){
+    .labelInputFormulario{
+        display: grid;
+        place-content: center;
+    }
+
+    .labelFormulario, .inputFormulario{
+        text-align: center;
+        width: 200px;
+    }
 }

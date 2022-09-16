@@ -2,6 +2,9 @@ import React from "react"
 import "./Home.css"
 import { Link } from "react-router-dom"
 import { routes } from "../../config/routes"
+import { SliderHome } from "../../components/Slider/SliderHome"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const Home = () => {
   return (
@@ -23,7 +26,7 @@ export const Home = () => {
             alt="Episodios"
           />
         </Link>
-        <Link className="seccionesHome" to={routes.HOME}>
+        <Link className="seccionesHome" to={routes.JUEGO}>
           <h2 className="tituloSeccionesHome">Juego memoria</h2>
           <img
             className="imgSeccionesHome"
@@ -32,6 +35,10 @@ export const Home = () => {
           />
         </Link>
       </div>
+      {/* <div className="sliderEstilo">
+        <SliderHome />
+      </div> */}
+      
     </>
   )
 }
