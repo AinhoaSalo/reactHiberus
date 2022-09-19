@@ -17,7 +17,7 @@ export function Formulario() {
 
     //Name
     if (!nameForm.match(/^(?![\s.]+$)[a-zA-Z\s.]*$/)) {
-      errores['name'] = 'El nombre debe comenzar en Mayuscula y solo puede contener letras';
+      errores['name'] = 'Primera letra en Mayuscula y solo letras';
       setIsInvalid(true)
     }
 
@@ -28,7 +28,7 @@ export function Formulario() {
 
     //Lastname
     if (!lastnameForm.match(/^(?![\s.]+$)[a-zA-Z\s.]*$/)) {
-      errores['lastname'] = 'El apellido debe comenzar en Mayuscula y solo puede contener letras'
+      errores['lastname'] = 'Primera letra en Mayuscula y solo letras'
       setIsInvalid(true)
     }
 
