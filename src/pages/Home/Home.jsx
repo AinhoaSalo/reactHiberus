@@ -35,10 +35,6 @@ export const Home = () => {
           />
         </Link>
       </div>
-      {/* <div className="sliderEstilo">
-        <SliderHome />
-      </div> */}
-      
     </>
   )
 }
