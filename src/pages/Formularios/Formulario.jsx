@@ -130,7 +130,7 @@ export function Formulario() {
             className="inputForm"
             onChange={(e) => { setMessageForm(e.target.value) }}
             value={messageForm}
-            type="text"
+            rows="4" cols="50"
             maxlength="300"
             name="message"
             id="message"

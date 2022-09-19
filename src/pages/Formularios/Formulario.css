@@ -29,11 +29,8 @@
     border-radius: 4px;
     padding: 4px;
     margin: 5px;
+    width: 300px;
 }
-
-/* .textArea{
-    height: 150px;
-} */
 
 .buttonContainer {
     margin: 30px;
@@ -58,15 +55,19 @@
     text-align: center;
 }
 
-@media (max-width: 1080px) and (min-width: 621px) {
+@media (max-width: 1080px) and (min-width: 681px) {
     .labelInputForm{
         display: flex;
         flex-wrap: wrap;
     }
+
+    .inputForm {
+        width: 200px;
+    }
 }
 
 
-@media (max-width: 620.99px) {
+@media (max-width: 680.99px) {
     .labelInputForm {
         display: grid;
         place-content: center;
