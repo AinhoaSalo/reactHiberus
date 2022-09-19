@@ -17,7 +17,7 @@ export function Formulario() {
 
     //Name
     if (!nameForm.match(/^(?![\s.]+$)[a-zA-Z\s.]*$/)) {
-      errores['name'] = 'Primera letra en Mayuscula y solo letras';
+      errores['name'] = 'Primera en Mayuscula y solo letras';
       setIsInvalid(true)
     }
 
@@ -28,7 +28,7 @@ export function Formulario() {
 
     //Lastname
     if (!lastnameForm.match(/^(?![\s.]+$)[a-zA-Z\s.]*$/)) {
-      errores['lastname'] = 'Primera letra en Mayuscula y solo letras'
+      errores['lastname'] = 'Primera en Mayuscula y solo letras'
       setIsInvalid(true)
     }
 

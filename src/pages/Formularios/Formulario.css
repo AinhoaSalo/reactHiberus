@@ -11,10 +11,7 @@
     border-radius: 5px;
 }
 
-.labelInputForm{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .titleform {
     font-size: 2rem;
@@ -56,13 +53,25 @@
     font-size: 15px;
     color: rgb(112, 22, 22);
     margin-left: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1080px) and (min-width: 621px) {
+    .labelInputForm{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
-@media (max-width: 620px) {
+@media (max-width: 620.99px) {
     .labelInputForm {
         display: grid;
         place-content: center;
+    }
+    .labelInputForm{
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .labelForm,
