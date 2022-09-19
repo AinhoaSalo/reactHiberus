@@ -126,16 +126,16 @@ export function Formulario() {
         </div>
         <div className="labelInputForm">
           <label className="labelForm" htmlFor="message">Escriba su mensaje:</label>
-          <input
+          <textarea
             className="inputForm"
             onChange={(e) => { setMessageForm(e.target.value) }}
             value={messageForm}
-            type="textarea"
-            rows="10"
-            cols="50"
+            type="text"
+            maxlength="300"
             name="message"
             id="message"
-          />
+          >
+          </textarea>
           <span className="errors">
             {isInvalid && errors.message}
           </span>

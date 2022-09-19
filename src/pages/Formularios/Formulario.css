@@ -11,8 +11,6 @@
     border-radius: 5px;
 }
 
-
-
 .titleform {
     font-size: 2rem;
     color: #F2E852;
@@ -32,6 +30,10 @@
     padding: 4px;
     margin: 5px;
 }
+
+/* .textArea{
+    height: 150px;
+} */
 
 .buttonContainer {
     margin: 30px;
