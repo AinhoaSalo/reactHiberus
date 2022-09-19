@@ -10,8 +10,6 @@ export function Formulario() {
   const [messageForm, setMessageForm] = useState("");
   const [isInvalid, setIsInvalid] = useState(false);
   const [errors, setErrors] = useState({});
-  console.log(nameForm, lastnameForm, emailForm, objectForm, messageForm)
-
 
   function valid() {
     const errores = {};
@@ -30,7 +28,6 @@ export function Formulario() {
 
     //Lastname
     if (!lastnameForm.match(/^(?![\s.]+$)[a-zA-Z\s.]*$/)) {
-      console.log('Estoy dentro')
       errores['lastname'] = 'El apellido debe comenzar en Mayuscula y solo puede contener letras'
       setIsInvalid(true)
     }
@@ -54,7 +51,7 @@ export function Formulario() {
 
     //Object
     if (objectForm.length < 1) {
-      errores['object'] = 'Por favor, especifique motivo de contacto';
+      errores['object'] = 'Especifique motivo de contacto';
       setIsInvalid(true)
     }
 
@@ -64,20 +61,17 @@ export function Formulario() {
       setIsInvalid(true)
     }
 
-
-
-
     setErrors(errores);
   }
 
   return (
-    <div className="formulario">
-      <h1 className="tituloFormulario">Contacto</h1>
+    <div className="form">
+      <h1 className="titleform">Contacto</h1>
       <form>
-        <div className="labelInputFormulario">
-          <label className="labelFormulario" htmlFor="name">Nombre:</label>
+        <div className="labelInputForm">
+          <label className="labelForm" htmlFor="name">Nombre:</label>
           <input
-            className="inputFormulario"
+            className="inputForm"
             onChange={(e) => { setNameForm(e.target.value) }}
             value={nameForm}
             type="text"
@@ -88,24 +82,24 @@ export function Formulario() {
             {isInvalid && errors.name}
           </span>
         </div>
-        <div className="labelInputFormulario">
-          <label className="labelFormulario" htmlFor="lastname">Apellidos:</label>
+        <div className="labelInputForm">
+          <label className="labelForm" htmlFor="lastname">Apellidos:</label>
           <input
-            className="inputFormulario"
+            className="inputForm"
             onChange={(e) => { setLastnameForm(e.target.value) }}
             value={lastnameForm}
             type="text"
-            name="apellidos"
+            name="lastname"
             id="lastname"
           />
           <span className="errors">
             {isInvalid && errors.lastname}
           </span>
         </div>
-        <div className="labelInputFormulario">
-          <label className="labelFormulario" htmlFor="email">Email:</label>
+        <div className="labelInputForm">
+          <label className="labelForm" htmlFor="email">Email:</label>
           <input
-            className="inputFormulario"
+            className="inputForm"
             onChange={(e) => { setEmailForm(e.target.value) }}
             value={emailForm}
             type="text"
@@ -116,10 +110,10 @@ export function Formulario() {
             {isInvalid && errors.email}
           </span>
         </div>
-        <div className="labelInputFormulario">
-          <label className="labelFormulario" htmlFor="object">Motivo de consulta:</label>
+        <div className="labelInputForm">
+          <label className="labelForm" htmlFor="object">Motivo de consulta:</label>
           <input
-            className="inputFormulario"
+            className="inputForm"
             onChange={(e) => { setObjectForm(e.target.value) }}
             value={objectForm}
             type="text"
@@ -130,16 +124,16 @@ export function Formulario() {
             {isInvalid && errors.object}
           </span>
         </div>
-        <div className="labelInputFormulario">
-          <label className="labelFormulario" htmlFor="message">Escriba su mensaje:</label>
+        <div className="labelInputForm">
+          <label className="labelForm" htmlFor="message">Escriba su mensaje:</label>
           <input
-            className="inputFormulario"
+            className="inputForm"
             onChange={(e) => { setMessageForm(e.target.value) }}
             value={messageForm}
             type="textarea"
             rows="10"
             cols="50"
-            name="mensaje"
+            name="message"
             id="message"
           />
           <span className="errors">

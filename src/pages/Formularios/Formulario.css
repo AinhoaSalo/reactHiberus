@@ -1,4 +1,4 @@
-.formulario {
+.form {
     display: flex;
     justify-content: center;
     min-height: max-content;
@@ -11,23 +11,29 @@
     border-radius: 5px;
 }
 
-.tituloFormulario {
+.labelInputForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titleform {
     font-size: 2rem;
     color: #F2E852;
     margin-bottom: 10px;
 }
 
-.labelFormulario {
+.labelForm {
     color: white;
     float: left;
     text-align: left;
     width: 200px;
 }
 
-.inputFormulario {
+.inputForm {
     border: none;
     border-radius: 4px;
     padding: 4px;
+    margin: 5px;
 }
 
 .buttonContainer {
@@ -46,18 +52,21 @@
 }
 
 .errors {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    font-size: 15px;
     color: rgb(112, 22, 22);
+    margin-left: 10px;
 }
 
 
 @media (max-width: 620px) {
-    .labelInputFormulario {
+    .labelInputForm {
         display: grid;
         place-content: center;
     }
 
-    .labelFormulario,
-    .inputFormulario {
+    .labelForm,
+    .inputForm {
         text-align: center;
         width: 200px;
     }
