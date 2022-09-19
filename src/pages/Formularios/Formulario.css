@@ -13,24 +13,24 @@
 
 .tituloFormulario {
     font-size: 2rem;
-    color: #F2E852; 
+    color: #F2E852;
     margin-bottom: 10px;
 }
 
 .labelFormulario {
     color: white;
-    float:left;
-    text-align:left;
-    width:200px;
+    float: left;
+    text-align: left;
+    width: 200px;
 }
 
-.inputFormulario{
+.inputFormulario {
     border: none;
     border-radius: 4px;
     padding: 4px;
 }
 
-.buttonContainer{
+.buttonContainer {
     margin: 30px;
     display: grid;
     place-content: center;
@@ -42,16 +42,22 @@
     color: black;
     padding: 5px 10px;
     border-radius: 4px;
-    
+
 }
 
-@media (max-width: 620px){
-    .labelInputFormulario{
+.errors {
+    color: rgb(112, 22, 22);
+}
+
+
+@media (max-width: 620px) {
+    .labelInputFormulario {
         display: grid;
         place-content: center;
     }
 
-    .labelFormulario, .inputFormulario{
+    .labelFormulario,
+    .inputFormulario {
         text-align: center;
         width: 200px;
     }
