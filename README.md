@@ -37,4 +37,10 @@ Con esto arrancamos npm, despues ponemos:
 Así se instala todos los paquetes que he usado en el proyecto.
 
 
+### Información adicional
 
+Este repositorio está desplegado:
+https://julenmendioroz.github.io/reactHiberus/
+
+Dirección al repositorio: 
+https://github.com/JulenMendioroz/reactHiberus
