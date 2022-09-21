@@ -55,13 +55,16 @@
     text-align: center;
 }
 
-@media (max-width: 1080px) and (min-width: 681px) {
-    .labelInputForm{
-        display: flex;
-        flex-wrap: wrap;
+@media (max-width: 1310px) and (min-width: 681px) {
+    .labelInputForm {
+        display: grid;
+        place-content: center;
+
     }
 
+    .labelForm,
     .inputForm {
+        text-align: center;
         width: 200px;
     }
 }
